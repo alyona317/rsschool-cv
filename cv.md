@@ -11,7 +11,7 @@ So this is my first trying in this area. I like to learning something new.
 # Code Example
 
 # Experience
-
+* design engineer for 5 years
 # Education
 * Peter the Great St.Petersburg Polytechnic University (SPbPU), Master's Degree in Civil Engineering
 # English
