@@ -9,7 +9,7 @@ So this is my first trying in this area. I like to learning something new.
 # Skills
 * GitHub
 # Code Example
-
+The code will appear here soon
 # Experience
 * design engineer for 5 years
 # Education
