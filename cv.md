@@ -4,9 +4,9 @@
 * Email: oschepkova.alyona@yandex.ru
 * This is my [GitHub page](https://github.com/alyona317)
 ## &#129299;About Me
-I have a little bit of skills in an area of programming. So this is my the third trying in Rolling scope school. I like to learning something new.
+I have a little bit of skills in an area of programming. So this is my the forth trying in Rolling scope school. I like to learning something new.
 
-In free time I like to make 3d models for games.
+In free time I like to listen podcasts, going to quizzes and wrestling!:muscle:
 ## &#127867;Skills
 * GitHub
 * VS Code
