@@ -1,4 +1,4 @@
-# Alyona Oschepkova
+# Alena Oshchepkova
 
 ## Contact Information
 - Location: St. Petersburg, Russia
