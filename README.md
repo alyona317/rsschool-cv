@@ -1,1 +1,1 @@
-# [Link to CV](https://alyona317.github.io/rsschool-cv/cv)
+# [Link to CV](https://GITHUB-USERNAME.github.io/rsschool-cv/)
