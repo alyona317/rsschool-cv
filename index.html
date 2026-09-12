@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alena Oshchepkova — Resume</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Alena Oshchepkova - Resume</title>
 </head>
 <body>
-
-  <h1>Alena Oshchepkova</h1>
-  <div class="contacts">
-    <span>📍 St. Petersburg, Russia</span>
-    <span>💻 GitHub: alyona317</span>
-    <span>✉️ oschepkova.alyona@yandex.ru</span>
+  <header class="header">
+  <div class="header__logo">
+    <img src="" alt="logo">
   </div>
-
-  <h2>About Me</h2>
+  <nav class="header__nav">
+    <ul class="header__nav-list">
+      <li class="header__nav-item">
+        <a href="#aboutme" class="header__nav-link header__nav-link--active">About me</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#skills" class="header__nav-link">Skills</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#codeexample" class="header__nav-link">Code Example</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#experience" class="header__nav-link">Experience</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#education" class="header__nav-link">Education</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#english" class="header__nav-link">English</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#contacts" class="header__nav-link">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+  <button class="header__button">Write me</button>
+</header>
+  <main>
+    <section id="aboutme" class="section section--about">
+<h1>Alena Oshchepkova</h1>
+ <h2>About Me</h2>
   <p>
     Frontend developer with experience building responsive websites in JavaScript and SPAs in React.
     Proficient in HTML, CSS, and TypeScript. Understand the principles of quality markup: responsiveness,
     pixel-perfect implementation, and cross-browser compatibility.
     Looking to work on projects with a modern technology stack.
   </p>
+</section>
 
-  <h2>Skills</h2>
+<section id="skills" class="section section--skills">
+    <h2>Skills</h2>
   <div class="skills-grid">
     <strong>Programming languages:</strong> <span>JavaScript (ES6+), TypeScript, HTML5, CSS3</span>
     <strong>Frameworks &amp; libraries:</strong> <span>React, Redux</span>
@@ -31,8 +59,10 @@
     <strong>Version control:</strong> <span>Git</span>
     <strong>Dev tools:</strong> <span>Vite, Sass, Figma, DevTools</span>
   </div>
+</section>
 
-  <h2>Code Sample</h2>
+<section id="codeexample" class="section section--code">
+<h2>Code Sample</h2>
 <pre><code>var removeDuplicates = function(nums) {
     let left = 0;
 
@@ -44,8 +74,10 @@
     }
     return left + 1;
 };</code></pre>
+</section>
 
-  <h2>Experience</h2>
+<section id="experience" class="section section--experience">
+ <h2>Experience</h2>
 
   <p><em>Educational and pet projects</em></p>
 
@@ -55,7 +87,6 @@
     Implemented responsive layout and REST API requests, and conducted code reviews for other team members.</p>
     <div class="stack">Stack: React, TypeScript, REST API, Git</div>
   </div>
-
   <div class="project">
     <h3>Web application with authentication and a database</h3>
     <p>Full-stack application: user registration and login, data storage in MongoDB.
@@ -79,8 +110,10 @@
     debugged using DevTools.</p>
     <div class="stack">Stack: HTML5, CSS3, JavaScript</div>
   </div>
+</section>
 
-  <h2>Education</h2>
+<section id="education" class="section section--education">
+<h2>Education</h2>
   <div class="edu-item">
     <strong>Master's degree</strong> <span class="year">— 2018</span><br>
     Peter the Great St. Petersburg Polytechnic University, St. Petersburg — Faculty of Civil Engineering
@@ -94,9 +127,21 @@
   <div class="edu-item">
     <strong>Node.JS Course</strong> <span class="year">— 2025</span>, The Rolling Scopes School
   </div>
-
+</section>
+<section id="english" class="section section--english">
   <h2>English</h2>
   <p>Level: Intermediate (B1)</p>
+</section>
+
+<section id="contacts" class="section section--contacts">
+    <span>📍 St. Petersburg, Russia</span>
+    <span>💻 GitHub: alyona317</span>
+    <span>✉️ oschepkova.alyona@yandex.ru</span>
+</section>
+  </main>
+  <footer>
+
+  </footer>
 
 </body>
 </html>
