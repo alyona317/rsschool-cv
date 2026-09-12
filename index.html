@@ -1,69 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Alena Oshchepkova - Resume</title>
-</head>
-<body>
-  <header class="header">
-  <div class="header__logo">
-    <img src="" alt="logo">
-  </div>
-  <nav class="header__nav">
-    <ul class="header__nav-list">
-      <li class="header__nav-item">
-        <a href="#aboutme" class="header__nav-link header__nav-link--active">About me</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="#skills" class="header__nav-link">Skills</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="#codeexample" class="header__nav-link">Code Example</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="#experience" class="header__nav-link">Experience</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="#education" class="header__nav-link">Education</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="#english" class="header__nav-link">English</a>
-      </li>
-      <li class="header__nav-item">
-        <a href="#contacts" class="header__nav-link">Contacts</a>
-      </li>
-    </ul>
-  </nav>
-  <button class="header__button">Write me</button>
-</header>
-  <main>
-    <section id="aboutme" class="section section--about">
-<h1>Alena Oshchepkova</h1>
- <h2>About Me</h2>
-  <p>
-    Frontend developer with experience building responsive websites in JavaScript and SPAs in React.
-    Proficient in HTML, CSS, and TypeScript. Understand the principles of quality markup: responsiveness,
-    pixel-perfect implementation, and cross-browser compatibility.
-    Looking to work on projects with a modern technology stack.
-  </p>
-</section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,600&display=swap">
+    <title>Alena Oshchepkova - Resume</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html" class="header__logo-link"
+          >Alena Oshchepkova</a
+        >
+      </div>
+      <nav>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#aboutme" class="header__nav-link header__nav-link--active"
+              >About me</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="#skills" class="header__nav-link">Skills</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#codeexample" class="header__nav-link">Code Example</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#experience" class="header__nav-link">Experience</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#education" class="header__nav-link">Education</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#english" class="header__nav-link">English</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#contacts" class="header__nav-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="mailto:oshepkova.alyona@yandex.ru" class="header__button">Write me</a>
+    </header>
+    <main class="page">
+      <section id="aboutme" class="section section--about">
+        <h1>Alena Oshchepkova</h1>
+        <h2>About Me</h2>
+        <p>
+          Frontend developer with experience building responsive websites in
+          JavaScript and SPAs in React. Proficient in HTML, CSS, and TypeScript.
+          Understand the principles of quality markup: responsiveness,
+          pixel-perfect implementation, and cross-browser compatibility. Looking
+          to work on projects with a modern technology stack.
+        </p>
+      </section>
 
-<section id="skills" class="section section--skills">
-    <h2>Skills</h2>
-  <div class="skills-grid">
-    <strong>Programming languages:</strong> <span>JavaScript (ES6+), TypeScript, HTML5, CSS3</span>
-    <strong>Frameworks &amp; libraries:</strong> <span>React, Redux</span>
-    <strong>Methodologies:</strong> <span>BEM, SPA, REST API</span>
-    <strong>Version control:</strong> <span>Git</span>
-    <strong>Dev tools:</strong> <span>Vite, Sass, Figma, DevTools</span>
-  </div>
-</section>
+      <section id="skills" class="section section--skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <strong>Programming languages:</strong>
+          <span>JavaScript (ES6+), TypeScript, HTML5, CSS3</span>
+          <strong>Frameworks &amp; libraries:</strong> <span>React, Redux</span>
+          <strong>Methodologies:</strong> <span>BEM, SPA, REST API</span>
+          <strong>Version control:</strong> <span>Git</span>
+          <strong>Dev tools:</strong> <span>Vite, Sass, Figma, DevTools</span>
+        </div>
+      </section>
 
-<section id="codeexample" class="section section--code">
-<h2>Code Sample</h2>
-<pre><code>var removeDuplicates = function(nums) {
+      <section id="codeexample" class="section section--code">
+        <h2>Code Sample</h2>
+        <pre>
+          <code>var removeDuplicates = function(nums) {
     let left = 0;
 
     for (let right = 1; right &lt; nums.length; right++) {
@@ -73,75 +82,98 @@
         }
     }
     return left + 1;
-};</code></pre>
-</section>
+};        </code>
+        </pre>
+      </section>
 
-<section id="experience" class="section section--experience">
- <h2>Experience</h2>
+      <section id="experience" class="section section--experience">
+        <h2>Experience</h2>
 
-  <p><em>Educational and pet projects</em></p>
+        <p><em>Educational and pet projects</em></p>
 
-  <div class="project">
-    <h3>Postman-like site — team SPA development</h3>
-    <p>Developed the interface for an online store using React + TypeScript in a team of 3.
-    Implemented responsive layout and REST API requests, and conducted code reviews for other team members.</p>
-    <div class="stack">Stack: React, TypeScript, REST API, Git</div>
-  </div>
-  <div class="project">
-    <h3>Web application with authentication and a database</h3>
-    <p>Full-stack application: user registration and login, data storage in MongoDB.
-    Frontend on React (registration form, user list, responsive UI layout), backend on Node.js
-    (REST API, JWT authentication).</p>
-    <div class="stack">Stack: React, Node.js, MongoDB, JWT</div>
-  </div>
+        <div class="project">
+          <h3>Postman-like site — team SPA development</h3>
+          <p>
+            Developed the interface for an online store using React + TypeScript
+            in a team of 3. Implemented responsive layout and REST API requests,
+            and conducted code reviews for other team members.
+          </p>
+          <div class="stack">Stack: React, TypeScript, REST API, Git</div>
+        </div>
+        <div class="project">
+          <h3>Web application with authentication and a database</h3>
+          <p>
+            Full-stack application: user registration and login, data storage in
+            MongoDB. Frontend on React (registration form, user list, responsive
+            UI layout), backend on Node.js (REST API, JWT authentication).
+          </p>
+          <div class="stack">Stack: React, Node.js, MongoDB, JWT</div>
+        </div>
 
-  <div class="project">
-    <h3>Form for automatic XML document generation <small>(pet project)</small></h3>
-    <p>A tool for filling out design assignments (state expert review) with export to XML — a practical
-    task at the intersection of my engineering background and new tech stack. Designed the UI with a focus
-    on ease of form completion and data validation, and used AI tools during development.</p>
-    <div class="stack">Stack: React, JavaScript</div>
-  </div>
+        <div class="project">
+          <h3>
+            Form for automatic XML document generation
+            <small>(pet project)</small>
+          </h3>
+          <p>
+            A tool for filling out design assignments (state expert review) with
+            export to XML — a practical task at the intersection of my
+            engineering background and new tech stack. Designed the UI with a
+            focus on ease of form completion and data validation, and used AI
+            tools during development.
+          </p>
+          <div class="stack">Stack: React, JavaScript</div>
+        </div>
 
-  <div class="project">
-    <h3>Landing pages and interactive pages</h3>
-    <p>Built several landing pages from ready-made designs (HTML5/CSS3), responsive layout
-    (mobile-first, media queries), integrated JavaScript (sliders, modals, form validation),
-    debugged using DevTools.</p>
-    <div class="stack">Stack: HTML5, CSS3, JavaScript</div>
-  </div>
-</section>
+        <div class="project">
+          <h3>Landing pages and interactive pages</h3>
+          <p>
+            Built several landing pages from ready-made designs (HTML5/CSS3),
+            responsive layout (mobile-first, media queries), integrated
+            JavaScript (sliders, modals, form validation), debugged using
+            DevTools.
+          </p>
+          <div class="stack">Stack: HTML5, CSS3, JavaScript</div>
+        </div>
+      </section>
 
-<section id="education" class="section section--education">
-<h2>Education</h2>
-  <div class="edu-item">
-    <strong>Master's degree</strong> <span class="year">— 2018</span><br>
-    Peter the Great St. Petersburg Polytechnic University, St. Petersburg — Faculty of Civil Engineering
-  </div>
-  <div class="edu-item">
-    <strong>React Course</strong> <span class="year">— 2025</span>, The Rolling Scopes School
-  </div>
-  <div class="edu-item">
-    <strong>JS / Front-end Course</strong> <span class="year">— 2025</span>, The Rolling Scopes School
-  </div>
-  <div class="edu-item">
-    <strong>Node.JS Course</strong> <span class="year">— 2025</span>, The Rolling Scopes School
-  </div>
-</section>
-<section id="english" class="section section--english">
-  <h2>English</h2>
-  <p>Level: Intermediate (B1)</p>
-</section>
+      <section id="education" class="section section--education">
+        <h2>Education</h2>
+        <div class="edu-item">
+          <strong>Master's degree</strong> <span class="year">— 2018</span
+          ><br />
+          Peter the Great St. Petersburg Polytechnic University, St. Petersburg
+          — Faculty of Civil Engineering
+        </div>
+        <div class="edu-item">
+          <strong>React Course</strong> <span class="year">— 2025</span>, The
+          Rolling Scopes School
+        </div>
+        <div class="edu-item">
+          <strong>JS / Front-end Course</strong>
+          <span class="year">— 2025</span>, The Rolling Scopes School
+        </div>
+        <div class="edu-item">
+          <strong>Node.JS Course</strong> <span class="year">— 2025</span>, The
+          Rolling Scopes School
+        </div>
+      </section>
+      <section id="english" class="section section--english">
+        <h2>English</h2>
+        <p>Level: Intermediate (B1)</p>
+      </section>
 
-<section id="contacts" class="section section--contacts">
-    <span>📍 St. Petersburg, Russia</span>
-    <span>💻 GitHub: alyona317</span>
-    <span>✉️ oschepkova.alyona@yandex.ru</span>
-</section>
-  </main>
-  <footer>
-
-  </footer>
-
-</body>
+      <section id="contacts" class="section section--contacts">
+        <span>📍 St. Petersburg, Russia</span>
+        <span>💻 GitHub: alyona317</span>
+        <span>✉️ oschepkova.alyona@yandex.ru</span>
+      </section>
+    </main>
+    <footer>
+      <p><a href="https://app.rs.school/">Link to Rolling Scope School</a></p>
+      <p>
+        <img class="logo" src="assets/logo-rsschool.png" alt="rsschool logo" />
+      </p>
+    </footer>
+  </body>
 </html>
