@@ -1,13 +1,15 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    line-height: 1.5;
-    background: #a0c540;
-    -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  line-height: 1.5;
+  background: #a0c540;
+  -webkit-font-smoothing: antialiased;
 }
 .header {
   display: flex;
@@ -18,13 +20,13 @@ body {
   top: 0;
   z-index: 100;
   background-color: #a0c540;
-    gap: 20px;
+  gap: 20px;
 }
-.header__nav-list{
+.header__nav-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+
   gap: 24px;
   list-style: none;
   margin: 0;
@@ -32,7 +34,7 @@ body {
 }
 
 .header__logo-link {
-  font-family: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', serif;
+  font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
   font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
@@ -40,7 +42,9 @@ body {
   color: #241e1a;
   text-decoration: none;
   display: inline-block;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .header__logo-link:hover {
@@ -54,7 +58,9 @@ body {
   font-weight: 500;
   padding-bottom: 4px;
   border-bottom: 1px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .header__nav-link:hover {
@@ -80,7 +86,9 @@ body {
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 10px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .header__button:hover {
@@ -91,58 +99,129 @@ body {
 .page > section {
   padding-block: 80px;
 }
-h1 {
-    margin-bottom: 4px;
-    font-size: 28px;
+
+/* About Me */
+
+.about {
+  position: relative;
+  overflow: hidden;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
 }
+.about__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.about__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 56px;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+}
+.about__text {
+  background-color: #a0c540;
+  padding: 20px;
+}
+.about__title {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about__description {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 46ch;
+  color: #241e1a;
+}
+
+.about__media {
+  position: relative;
+  justify-self: center;
+}
+
+.about__photo {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
+.about__name {
+  position: absolute;
+  left: -38px;
+  bottom: 0px;
+  background-color: #a0c540;
+  color: #241e1a;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 32px;
+  padding: 10px 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .about__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .about__name {
+    left: 12px;
+  }
+}
+
+/* Skills */
+
 .contacts {
-    margin-bottom: 24px;
-    color: #555;
-    font-size: 14px;
+  margin-bottom: 24px;
+  color: #555;
+  font-size: 14px;
 }
 .contacts span {
-    margin-right: 16px;
+  margin-right: 16px;
 }
-h2 {
-    font-size: 18px;
-    border-bottom: 2px solid #333;
-    padding-bottom: 4px;
-    margin-top: 32px;
-    margin-bottom: 12px;
-}
+
 .skills-grid {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 6px 12px;
-    font-size: 14px;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 6px 12px;
+  font-size: 14px;
 }
 .skills-grid strong {
-    color: #333;
+  color: #333;
 }
 pre {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 12px;
-    overflow-x: auto;
-    font-size: 13px;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  overflow-x: auto;
+  font-size: 13px;
 }
 .project {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 .project h3 {
-    margin-bottom: 4px;
-    font-size: 16px;
+  margin-bottom: 4px;
+  font-size: 16px;
 }
 .stack {
-    font-size: 13px;
-    color: #555;
-    font-style: italic;
+  font-size: 13px;
+  color: #555;
+  font-style: italic;
 }
 .edu-item {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .edu-item .year {
-    color: #777;
-    font-size: 13px;
+  color: #777;
+  font-size: 13px;
 }
