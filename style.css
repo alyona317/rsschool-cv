@@ -8,7 +8,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #222;
   line-height: 1.5;
-  background: #a0c540;
+  /* background: #a0c540; */
+    background: #c59b40;
   -webkit-font-smoothing: antialiased;
 }
 .header {
@@ -180,32 +181,109 @@ body {
 
 /* Skills */
 
-.contacts {
-  margin-bottom: 24px;
-  color: #555;
-  font-size: 14px;
-}
-.contacts span {
-  margin-right: 16px;
+.skills {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
 }
 
-.skills-grid {
+.skills__title {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.skills__grid {
   display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 6px 12px;
-  font-size: 14px;
+  grid-template-columns: max-content 1fr;
+  column-gap: 32px;
+  row-gap: 20px;
+  align-items: baseline;
 }
-.skills-grid strong {
-  color: #333;
-}
-pre {
-  background: #f4f4f4;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 12px;
-  overflow-x: auto;
+
+.skills__label {
+  font-family: 'Space Mono', monospace;
   font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6a3b46;
+  font-weight: 700;
+  white-space: nowrap;
 }
+
+.skills__value {
+  font-size: 16px;
+  color: #241e1a;
+}
+
+@media (max-width: 560px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
+  .skills__label {
+    margin-top: 16px;
+  }
+}
+
+
+/* Code Examples */
+
+.code-example {
+  padding-block: 100px;
+
+}
+
+.code-example__title {
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  color: #241e1a;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.code-example__window {
+  max-width: 640px;
+  margin-inline: auto;
+  background-color: #0d1512;
+  border: 1px solid rgba(79, 255, 140, 0.25);
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(79, 255, 140, 0.12), 0 20px 40px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.code-example__bar {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  background-color: #111815;
+  border-bottom: 1px solid rgba(79, 255, 140, 0.15);
+}
+
+.code-example__dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.code-example__dot--red { background-color: #ff5f56; }
+.code-example__dot--yellow { background-color: #ffbd2e; }
+.code-example__dot--green { background-color: #27c93f; }
+
+.code-example__pre {
+  margin: 0;
+  padding: 28px 32px;
+  overflow-x: auto;
+  background: #f4f4f4;
+}
+
+.code-example__code {
+  font-family: 'Space Mono', 'Fira Code', monospace;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #241e1a;
+  white-space: pre;
+}
+
 .project {
   margin-bottom: 18px;
 }
@@ -224,4 +302,219 @@ pre {
 .edu-item .year {
   color: #777;
   font-size: 13px;
+}
+/* Experience */
+.experience {
+  padding-block: 100px;
+  /* background-color: #f3e3cf; */
+}
+
+.experience__title {
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.experience__intro {
+  text-align: center;
+  color: #6a3b46;
+  font-size: 15px;
+  margin-bottom: 56px;
+}
+
+.experience__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.experience__project {
+  width: 100%;
+  max-width: 600px;
+  padding-top: 32px;
+  text-align: center;
+}
+
+.experience__project:not(:first-child) {
+  border-top: 1px solid rgba(36, 30, 26, 0.15);
+}
+
+.experience__project-title {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.experience__project-note {
+  display: block;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  font-weight: 400;
+  color: #6a3b46;
+  margin-top: 4px;
+}
+
+.experience__project-text {
+  text-align: left; 
+  font-size: 15px;
+  line-height: 1.7;
+  color: #241e1a;
+  max-width: 52ch;
+  margin-inline: auto;
+}
+
+.experience__stack {
+  margin-top: 16px;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #6a3b46;
+}
+
+/* Education */
+.education {
+  padding-block: 100px;
+  background-color: #f3e3cf;
+}
+
+.education__title {
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.education__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin-inline: auto;
+  gap: 28px;
+}
+
+.education__item {
+  width: 100%;
+  text-align: center;
+  padding-top: 24px;
+}
+
+.education__item:not(:first-child) {
+  border-top: 1px solid rgba(36, 30, 26, 0.15);
+}
+
+.education__heading {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.education__degree {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.education__year {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  color: #6a3b46;
+}
+
+.education__details {
+  font-size: 14px;
+  color: #241e1a;
+  opacity: 0.75;
+}
+
+/* English */
+.english {
+  padding-block: 80px;
+  background-color: #f3e3cf;
+  text-align: center;
+}
+
+.english__title {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.english__level {
+  display: inline-block;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #241e1a;
+  border: 1px solid rgba(36, 30, 26, 0.3);
+  border-radius: 999px;
+  padding: 8px 22px;
+}
+
+/* Contacts */
+.contacts {
+  padding-block: 100px;
+  background-color: #241e1a;
+  text-align: center;
+}
+
+.contacts__title {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  color: #f3e3cf;
+  margin-bottom: 32px;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+}
+
+.contacts__item {
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  color: #f3e3cf;
+}
+/* Footer */
+.footer {
+  padding-block: 28px;
+  background-color: #1a1512;
+  border-top: 1px solid rgba(243, 227, 207, 0.12);
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer__logo {
+  height: 28px;
+  width: auto;
+  display: block;
+  opacity: 0.9;
+}
+
+.footer__link {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: #caa08f;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: #f3e3cf;
 }
