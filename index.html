@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,600&display=swap"
+    />
+    <title>Alena Oshchepkova - Resume</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html" class="header__logo-link">Alena Oshchepkova</a>
+      </div>
+      <nav>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#aboutme" class="header__nav-link"
+              >About me</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="#skills" class="header__nav-link">Skills</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#codeexample" class="header__nav-link">Code Example</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#experience" class="header__nav-link">Experience</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#education" class="header__nav-link">Education</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#english" class="header__nav-link">English</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#contacts" class="header__nav-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="mailto:oshepkova.alyona@yandex.ru" class="header__button"
+        >Write me</a
+      >
+    </header>
+    <main class="page">
+      <section class="about" id="aboutme">
+        <div class="container about__inner">
+          <div class="about__text">
+            <h2 class="about__title">About Me</h2>
+            <p class="about__description">
+              Frontend developer with experience building responsive websites in
+              JavaScript and SPAs in React. Proficient in HTML, CSS, and
+              TypeScript. Understand the principles of quality markup:
+              responsiveness, pixel-perfect implementation, and cross-browser
+              compatibility. Looking to work on projects with a modern
+              technology stack.
+            </p>
+          </div>
+
+          <div class="about__media">
+            <img
+              src="assets/img/photo.jpg"
+              alt="photo"
+              class="about__photo"
+            />
+            <span class="about__name">Alena Oshchepkova</span>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="skills__title">Skills</h2>
+
+          <div class="skills__grid">
+            <strong class="skills__label">Programming languages:</strong>
+            <span class="skills__value"
+              >JavaScript (ES6+), TypeScript, HTML5, CSS3</span
+            >
+
+            <strong class="skills__label">Frameworks &amp; libraries:</strong>
+            <span class="skills__value">React, Redux</span>
+
+            <strong class="skills__label">Methodologies:</strong>
+            <span class="skills__value">BEM, SPA, REST API</span>
+
+            <strong class="skills__label">Version control:</strong>
+            <span class="skills__value">Git</span>
+
+            <strong class="skills__label">Dev tools:</strong>
+            <span class="skills__value">Vite, Sass, Figma, DevTools</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="codeexample" class="code-example">
+        <div class="container">
+          <h2 class="code-example__title">Code Example</h2>
+
+          <div class="code-example__window">
+            <div class="code-example__bar">
+              <span class="code-example__dot code-example__dot--red"></span>
+              <span class="code-example__dot code-example__dot--yellow"></span>
+              <span class="code-example__dot code-example__dot--green"></span>
+            </div>
+
+            <pre
+              class="code-example__pre"
+            ><code class="code-example__code">var removeDuplicates = function(nums) {
+    let left = 0;
+
+    for (let right = 1; right &lt; nums.length; right++) {
+        if (nums[left] !== nums[right]) {
+            left++;
+            nums[left] = nums[right];
+        }
+    }
+    return left + 1;
+};</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+  <div class="container">
+    <h2 class="experience__title">Experience</h2>
+
+
+    <div class="experience__list">
+      <article class="experience__project">
+        <h3 class="experience__project-title">Postman-like site — team SPA development</h3>
+        <p class="experience__project-text">
+          Developed the interface for an online store using React + TypeScript
+          in a team of 3. Implemented responsive layout and REST API requests,
+          and conducted code reviews for other team members.
+        </p>
+        <div class="experience__stack">Stack: React, TypeScript, REST API, Git</div>
+      </article>
+
+      <article class="experience__project">
+        <h3 class="experience__project-title">Web application with authentication and a database</h3>
+        <p class="experience__project-text">
+          Full-stack application: user registration and login, data storage in
+          MongoDB. Frontend on React (registration form, user list, responsive
+          UI layout), backend on Node.js (REST API, JWT authentication).
+        </p>
+        <div class="experience__stack">Stack: React, Node.js, MongoDB, JWT</div>
+      </article>
+
+      <article class="experience__project">
+        <h3 class="experience__project-title">
+          Form for automatic XML document generation
+
+        </h3>
+        <p class="experience__project-text">
+          A tool for filling out design assignments (state expert review) with
+          export to XML — a practical task at the intersection of my
+          engineering background and new tech stack. Designed the UI with a
+          focus on ease of form completion and data validation, and used AI
+          tools during development.
+        </p>
+        <div class="experience__stack">Stack: React, JavaScript</div>
+      </article>
+
+      <article class="experience__project">
+        <h3 class="experience__project-title">Landing pages and interactive pages</h3>
+        <p class="experience__project-text">
+          Built several landing pages from ready-made designs (HTML5/CSS3),
+          responsive layout (mobile-first, media queries), integrated
+          JavaScript (sliders, modals, form validation), debugged using
+          DevTools.
+        </p>
+        <div class="experience__stack">Stack: HTML5, CSS3, JavaScript</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+ <section id="education" class="education">
+  <div class="container">
+    <h2 class="education__title">Education</h2>
+
+    <div class="education__list">
+      <div class="education__item">
+        <div class="education__heading">
+          <strong class="education__degree">Master's degree</strong>
+          <span class="education__year">— 2018</span>
+        </div>
+        <p class="education__details">
+          Peter the Great St. Petersburg Polytechnic University, St. Petersburg
+          — Faculty of Civil Engineering
+        </p>
+      </div>
+
+      <div class="education__item">
+        <div class="education__heading">
+          <strong class="education__degree">React Course</strong>
+          <span class="education__year">— 2025</span>
+        </div>
+        <p class="education__details">The Rolling Scopes School</p>
+      </div>
+
+      <div class="education__item">
+        <div class="education__heading">
+          <strong class="education__degree">JS / Front-end Course</strong>
+          <span class="education__year">— 2025</span>
+        </div>
+        <p class="education__details">The Rolling Scopes School</p>
+      </div>
+
+      <div class="education__item">
+        <div class="education__heading">
+          <strong class="education__degree">Node.JS Course</strong>
+          <span class="education__year">— 2025</span>
+        </div>
+        <p class="education__details">The Rolling Scopes School</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="english" class="english">
+  <div class="container">
+    <h2 class="english__title">English</h2>
+    <span class="english__level">Intermediate · B1</span>
+  </div>
+</section>
+<section id="contacts" class="contacts">
+  <div class="container">
+    <h2 class="contacts__title">Contacts</h2>
+    <div class="contacts__list">
+      <span class="contacts__item">📍 St. Petersburg, Russia</span>
+      <a href="https://github.com/alyona317" class="contacts__item">💻 GitHub: alyona317</a>
+      <a href="mailto:oshepkova.alyona@yandex.ru" class="contacts__item"
+        >✉️ oschepkova.alyona@yandex.ru</a>
+    </div>
+  </div>
+</section>
+
+    </main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="https://github.com/alyona317" class="contacts__item">alyona317</a>
+    <img class="footer__logo" src="assets/img/rs-school-logo.svg" alt="RS School logo" />
+    <a href="https://rs.school/courses/javascript" class="footer__link">Rolling Scope School</a>
+    <span class="contacts__item">2026</span>
+  </div>
+</footer>
+  </body>
+</html>
